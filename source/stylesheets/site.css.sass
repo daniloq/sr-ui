@@ -22,6 +22,7 @@ $yellow: #F5B700
   -moz-osx-font-smoothing: grayscale
   outline: none
   box-sizing: border-box
+  transition: 0.3s
 
 html
   font-size: 62.5%
@@ -108,6 +109,9 @@ h5
       font-size: 1.4rem
       padding: 0rem 2rem 0rem 4.5rem
 
+      &:focus
+        background: darken($light-gray, 3%)
+
   &__avatar
     height: 4.3rem
     width: 4.3rem
@@ -145,6 +149,19 @@ h5
     display: flex
     flex-direction: column
     margin-right: 2rem
+    color: $gray
+    box-shadow: 0 .2rem .2rem 0 rgba(0,0,0,0.1)
+
+    &:hover
+      background: $light-gray
+      box-shadow: 0 .3rem .2rem 0 rgba(0,0,0,0.2)
+
+    h5
+      color: $dark-gray
+
+    i
+      font-size: 6rem
+      color: $gray
 
     &-content
       flex-grow: 1
@@ -159,18 +176,9 @@ h5
       justify-content: center
       align-items: center
 
-    a
-      color: $gray
-    h5
-      color: $dark-gray
-    i
-      font-size: 6rem
-      color: $gray
-
     &--new
-      a, h5
-        color: $blue
-      i
+      color: $blue
+      i, h5
         color: $blue
 
 // Status
@@ -223,3 +231,10 @@ h5
     td
       padding: 2rem 0
       border-bottom: $gray .1rem solid
+    tr:hover
+      background: $medium-gray
+      cursor: pointer
+    thead
+      tr:hover
+        background: none
+        cursor: default
