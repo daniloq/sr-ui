@@ -11,6 +11,10 @@ $medium-gray: darken($light-gray, 4%)
 $gray: darken($light-gray, 16%)
 $dark-gray: #1D1D26
 $blue: #008DFB
+$red: #F04E62
+$dark-blue: #F04E62
+$green: #00A99D
+$yellow: #F5B700
 
 // Defaults
 *
@@ -45,6 +49,16 @@ h3
 
 h5
   font-size: 1.4rem
+
+// Buttons
+.s-button
+
+  &--text
+    border: none
+    background: none
+
+    i:hover
+      color: $blue
 
 // Max-width and Flex Wrapper
 .s-wrapper
@@ -159,12 +173,53 @@ h5
       i
         color: $blue
 
-// Buttons
-.s-button
+// Status
+.s-status
+  display: flex
+  align-items: center
 
-  &--text
-    border: none
-    background: none
+  .s-dot
+    margin-right: .5rem
 
-    i:hover
-      color: $blue
+// Dots
+.s-dot
+  width: .6rem
+  height: .6rem
+  border-radius: 50%
+  display: inline-block
+
+  &--red
+    background: $red
+
+  &--green
+    background: $green
+
+  &--dark-gray
+    background: $dark-gray
+
+  &--yellow
+    background: $yellow
+
+  &--blue
+    background: $blue
+
+  &--gray
+    background: $gray
+
+// Manage Offers Section
+.s-manage-offers
+  padding: 4rem 0
+
+  &__table
+
+    table
+      width: 100%
+      border-collapse: collapse
+    th
+      text-align: left
+      text-transform: uppercase
+      padding: 2rem 0
+      border-bottom: $gray .2rem solid
+    td
+      padding: 2rem 0
+      border-bottom: $gray .1rem solid
