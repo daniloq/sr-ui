@@ -7,6 +7,10 @@
 // Colors
 $white: #ffffff
 $light-gray: #F8F8F9
+$medium-gray: darken($light-gray, 4%)
+$gray: darken($light-gray, 16%)
+$dark-gray: #1D1D26
+$blue: #008DFB
 
 // Defaults
 *
@@ -24,6 +28,11 @@ body
   background: $light-gray
   font-size: 1.4rem
   font-family: 'Nunito Sans', sans-serif
+  color: $dark-gray
+
+a
+  color: $blue
+  text-decoration: none
 
 p
   font-size: 1.4rem
@@ -31,21 +40,29 @@ p
 h1
   font-size: 2.4rem
 
+h3
+  font-size: 1.8rem
+
+h5
+  font-size: 1.4rem
+
 // Max-width and Flex Wrapper
 .s-wrapper
   width: 100%
   max-width: 117rem
   margin: 0 auto
   padding: 0 2rem
-  display: flex
-  justify-content: space-between
-  align-items: center
-  height: inherit
 
 // Top Nav
 .s-nav
   background: $white
   height: 9.6rem
+
+  .s-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: inherit
 
   &__logo
     height: 3.7rem
@@ -86,3 +103,68 @@ h1
       display: inline-block
       vertical-align: middle
       border-radius: 50%
+
+// Header
+.s-header
+  border-bottom: $gray .2rem solid
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 2rem
+  padding: 0 0 2rem 0
+
+  h3
+    margin: 0
+
+// Offer
+.s-offer
+  background: $medium-gray
+  padding: 4rem 0
+
+  &__container
+    display: flex
+
+  &__template
+    background: $white
+    height: 19rem
+    width: 18rem
+    display: flex
+    flex-direction: column
+    margin-right: 2rem
+
+    &-content
+      flex-grow: 1
+      display: flex
+      justify-content: center
+      align-items: center
+
+    &-footer
+      border-top: $gray .2rem solid
+      height: 5rem
+      display: flex
+      justify-content: center
+      align-items: center
+
+    a
+      color: $gray
+    h5
+      color: $dark-gray
+    i
+      font-size: 6rem
+      color: $gray
+
+    &--new
+      a, h5
+        color: $blue
+      i
+        color: $blue
+
+// Buttons
+.s-button
+
+  &--text
+    border: none
+    background: none
+
+    i:hover
+      color: $blue
