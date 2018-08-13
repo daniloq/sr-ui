@@ -53,13 +53,26 @@ h5
 
 // Buttons
 .s-button
+  height: 2.7rem
+  background: $blue
+  color: $white
+  border: none
+  width: 10rem
+
+  &:hover
+    background: darken($blue, 5%)
+    cursor: pointer
 
   &--text
     border: none
     background: none
+    color: $dark-gray
+    width: auto
 
-    i:hover
-      color: $blue
+    &:hover
+      background: $gray
+      i
+        color: $blue
 
 // Max-width and Flex Wrapper
 .s-wrapper
@@ -238,3 +251,30 @@ h5
       tr:hover
         background: none
         cursor: default
+
+  &__details
+
+    td
+      padding: 0
+
+    &-content
+      display: flex
+      justify-content: space-between
+      padding: 2rem
+      background: $medium-gray
+      align-items: center
+
+      dl
+        margin: 0 6rem 0 0
+        padding: 0
+        display: inline-block
+        font-size: 1.2rem
+      dt
+        margin: 0
+        padding: 0
+        text-transform: uppercase
+        color: darken($gray, 20%)
+      dd
+        margin: 1rem 0 0 0
+        padding: 0
+        color: $dark-gray
