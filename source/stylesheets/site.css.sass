@@ -11,8 +11,8 @@ $medium-gray: darken($light-gray, 4%)
 $gray: darken($light-gray, 16%)
 $dark-gray: #1D1D26
 $blue: #008DFB
+$dark-blue: #002E6D
 $red: #F04E62
-$dark-blue: #F04E62
 $green: #00A99D
 $yellow: #F5B700
 
@@ -22,7 +22,6 @@ $yellow: #F5B700
   -moz-osx-font-smoothing: grayscale
   outline: none
   box-sizing: border-box
-  transition: 0.3s
 
 html
   font-size: 62.5%
@@ -38,6 +37,7 @@ body
 a
   color: $blue
   text-decoration: none
+  transition: 0.3s
 
 p
   font-size: 1.4rem
@@ -72,6 +72,7 @@ hr
   border: none
   font-size: 1.4rem
   padding:  0 2rem
+  transition: 0.3s
 
   &:hover
     background: darken($blue, 5%)
@@ -85,6 +86,7 @@ hr
     display: flex
     align-items: center
     padding: 0
+    transition: 0.3s
 
     span
       font-size: 1.4rem
@@ -140,6 +142,7 @@ hr
   border-bottom: $gray .1rem solid
   font-size: 1.4rem
   width: 100%
+  transition: 0.3s
 
   &:focus
     border-color: $blue
@@ -197,6 +200,7 @@ hr
       height: 4.8rem
       padding: 0 2rem
       line-height: 4.8rem
+      transition: 0.3s
 
     &:focus + label, + label:hover
       background-color: darken($green, 5%)
@@ -248,6 +252,7 @@ hr
       position: absolute
       top: 1.2rem
       left: 1rem
+      color: $gray
 
     input[type=text]
       height: inherit
@@ -257,6 +262,7 @@ hr
       border: none
       font-size: 1.4rem
       padding: 0rem 2rem 0rem 4.5rem
+      transition: 0.3s
 
       &:focus
         background: darken($light-gray, 3%)
@@ -287,6 +293,17 @@ hr
 
     .s-wrapper
       border-bottom: $gray .2rem solid
+
+// Subnav
+.s-subnav
+
+  &__content
+    display: flex
+    align-items: center
+    border-bottom: .1rem solid $gray
+
+  button
+    margin-right: 1rem
 
 // Header
 .s-header
@@ -353,7 +370,7 @@ hr
   align-items: center
 
   .s-dot
-    margin-right: .5rem
+    margin: 0 1rem
 
     &--large
       margin-right: 2rem
@@ -379,6 +396,9 @@ hr
 
   &--blue
     background: $blue
+
+  &--dark-blue
+    background: $dark-blue
 
   &--gray
     background: $gray
@@ -452,6 +472,9 @@ hr
   &__content
     flex-grow: 2
 
+  &--with-subnav
+    padding: 0 0 4rem 0
+
 // Sidebar
 .s-sidebar
   width: 33.33%
@@ -461,7 +484,7 @@ hr
     display: flex
     justify-content: space-between
     background: $medium-gray
-    margin: 0 -2rem 4rem -2rem
+    margin: 0 0rem 4rem -2rem
     padding: 2rem
     align-items: center
     color: darken($gray, 20%)
@@ -505,3 +528,63 @@ hr
     height: 100%
     border: none
     min-height: 60rem
+
+// Timeline
+.s-timeline
+
+  &__header
+    background: $medium-gray
+    margin: 4rem 0rem 0rem -2rem
+    padding: .5rem 2rem
+    color: darken($gray, 20%)
+
+  &__item
+    display: flex
+    align-items: center
+    padding: 3rem 0
+    border-bottom: .1rem solid $gray
+    margin-left: -2rem
+
+    &--active
+      position: relative
+
+      &:before
+        content: ""
+        position: absolute
+        height: 100%
+        width: .2rem
+        background: darken($gray, 20%)
+
+
+  &__icon
+    margin: 0 2rem
+    i
+      font-size: 2.6rem
+
+    &--green
+      i
+        color: $green
+
+    &--blue
+      i
+        color: $blue
+
+    &--dark-blue
+      i
+        color: $dark-blue
+
+    &--red
+      i
+        color: $red
+
+
+  &__meta
+
+    h5
+      margin: 0
+
+    small
+      color: darken($medium-gray, 30%)
+
+    p
+      font-size: 1rem
