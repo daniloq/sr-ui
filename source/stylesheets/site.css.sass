@@ -11,6 +11,7 @@ $medium-gray: darken($light-gray, 4%)
 $gray: darken($light-gray, 16%)
 $dark-gray: #1D1D26
 $blue: #008DFB
+$green-blue: #009BE1
 $dark-blue: #002E6D
 $red: #F04E62
 $green: #00A99D
@@ -106,11 +107,29 @@ hr
     &:hover
       background: darken($green, 5%)
 
+  &--green-blue
+    background: $green-blue
+
+    &:hover
+      background: darken($green-blue, 5%)
+
   &--large
     height: 4.8rem
 
+// Helpers
+.s-align-center
+  text-align: center
+
 // Forms
 .s-form
+
+  &-inline-helper
+    position: absolute
+    right: 0
+    top: .6rem
+
+    &__container
+      position: relative
 
   &__field
     margin: 0 0 3rem 0
@@ -631,3 +650,107 @@ hr
 
     &:hover
       background: $medium-gray
+
+// Candidate Sign Up
+.s-candidate-signup
+  background: $medium-gray
+  height: 100vh
+  width: 100vw
+  padding: 4rem
+
+  &__logo
+    width: auto
+    height: 8rem
+    text-align: center
+    margin-bottom: 4rem
+
+    img
+      height: 100%
+      width: auto
+
+  &__form
+    background: $white
+    padding: 4rem
+    max-width: 60rem
+    margin: 0 auto
+
+  h3
+    text-align: center
+
+  .s-form__footer
+    display: flex
+    justify-content: center
+
+    .s-button
+      width: 100%
+
+// Candidate Login
+.s-candidate-login
+  background: $white
+  height: 100vh
+  width: 100vw
+  padding: 4rem
+
+  &__logo
+    width: auto
+    height: 8rem
+    text-align: center
+    margin-bottom: 4rem
+
+    img
+      height: 100%
+      width: auto
+
+  &__form
+    padding: 4rem
+    max-width: 60rem
+    margin: 0 auto
+
+  .s-form__footer
+    display: flex
+    justify-content: center
+
+    .s-button
+      width: 100%
+
+// Media Queries
+@media screen and (max-width: 600px)
+
+  .s-candidate-signup
+    padding: 2rem
+
+    &__logo
+      width: auto
+      height: 5rem
+      text-align: center
+      margin-bottom: 2rem
+
+      img
+        height: 100%
+        width: auto
+
+    &__form
+      padding: 1rem
+
+  .s-candidate-login
+    padding: 2rem
+
+    &__logo
+      width: auto
+      height: 50vh
+      justify-content: center
+      display: flex
+
+      img
+        height: 8rem
+        width: auto
+        align-self: center
+
+    &__form
+      padding: 1rem
+
+  .s-form__field
+    margin: 0 0 2rem 0
+
+  .s-label
+    margin: 0
