@@ -33,6 +33,7 @@ body
   font-size: 1.4rem
   font-family: 'Nunito Sans', sans-serif
   color: $dark-gray
+  line-height: 2.8rem
 
 a
   color: $blue
@@ -294,6 +295,19 @@ hr
     .s-wrapper
       border-bottom: $gray .2rem solid
 
+  &--candidate
+    height: 12rem
+
+    .s-wrapper
+      justify-content: center
+
+    .s-nav__logo
+      height: 8rem
+
+      img
+        height: 100%
+        width: auto
+
 // Subnav
 .s-subnav
 
@@ -472,7 +486,7 @@ hr
   &__content
     flex-grow: 2
 
-  &--with-subnav
+  &--with-subnav, &--candidate
     padding: 0 0 4rem 0
 
 // Sidebar
@@ -588,3 +602,8 @@ hr
 
     p
       font-size: 1rem
+
+.s-candidate-help-text
+  font-size: 1.4rem
+  line-height: 2.8rem
+  margin-bottom: 4rem
