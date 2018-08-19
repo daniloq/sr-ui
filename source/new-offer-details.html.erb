@@ -20,7 +20,7 @@ title: Silkroad - New Offer Details
     <div class="s-new-offer__content">
       <div class="s-status">
         <span class="s-dot s-dot--large s-dot--red"></span>
-        <h1>Add a Job Title</h1>
+        <h1><input type="text" value="Add a Job Title" /></h1>
       </div>
       <form class="s-form">
         <div class="s-two-column">
@@ -48,7 +48,7 @@ title: Silkroad - New Offer Details
             </div>
             <div class="s-form__field">
               <label class="s-label">Start Date</label>
-              <input class="s-input" placeholder="Add start date" />
+              <input class="s-input" data-toggle="datepicker" placeholder="Add start date" />
               <div class="s-error-message">
                 Oops something went from.
               </div>
@@ -208,3 +208,7 @@ title: Silkroad - New Offer Details
     </div>
   </div>
 </div>
+
+<script>
+  $('[data-toggle="datepicker"]').datepicker();
+</script>

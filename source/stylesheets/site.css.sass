@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600')
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700')
 
 // Icons
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons')
@@ -32,7 +32,7 @@ body
   padding: 0
   background: $light-gray
   font-size: 1.4rem
-  font-family: 'Nunito Sans', sans-serif
+  font-family: 'Source Sans Pro', sans-serif
   color: $dark-gray
   line-height: 2.8rem
 
@@ -58,7 +58,7 @@ h3
 
 h5
   font-size: 1.4rem
-  font-weight: 600
+  font-weight: 700
 
 hr
   border: none
@@ -298,6 +298,16 @@ hr
       vertical-align: middle
       border-radius: 50%
 
+  &__avatar-placeholder
+    background: $green
+    color: $white
+    text-transform: uppercase
+    border-radius: 50%
+    height: 4.3rem
+    width: 4.3rem
+    line-height: 4.3rem
+    text-align: center
+
   &__breadcrumb
     display: flex
 
@@ -327,6 +337,15 @@ hr
       img
         height: 100%
         width: auto
+
+  &__menu-container
+    position: relative
+
+    .s-menu
+      left: auto
+      right: 0
+      min-width: 15rem
+      margin-top: 1rem
 
 // Subnav
 .s-subnav
@@ -409,6 +428,12 @@ hr
     &--large
       margin-right: 2rem
 
+  input
+    background: none
+    border: none
+    font-size: 2.4rem
+    font-weight: 400
+
 // Dots
 .s-dot
   width: .6rem
@@ -440,6 +465,37 @@ hr
   &--large
     width: 1.1rem
     height: 1.1rem
+
+// Pills
+.s-input__with-pills
+  display: flex
+  border-bottom: $gray .1rem solid
+  input
+    display: inline-flex
+    border: none
+
+  &-container
+    display: flex
+
+.s-pill
+  display: inline-flex
+  align-items: center
+  background: darken($gray, 20%)
+  border-radius: 100rem
+  padding: 0 1rem
+  color: $white
+  margin-right: 0.4rem
+  height: 3.3rem
+  margin-bottom: 0.4rem
+
+  i
+    font-size: 1.4rem
+    margin-left: .5rem
+    transition: all .3s
+
+    &:hover
+      cursor: pointer
+      color: $dark-gray
 
 // Manage Offers Section
 .s-manage-offers
@@ -508,6 +564,13 @@ hr
 
   &--with-subnav, &--candidate
     padding: 0 0 4rem 0
+
+  .s-input__with-pills
+    max-width: 50rem
+
+    .s-input
+      max-width: 100%
+
 
 // Sidebar
 .s-sidebar
@@ -649,6 +712,9 @@ hr
     color: $dark-gray
 
     &:hover
+      background: $medium-gray
+
+    &--selected
       background: $medium-gray
 
 // Candidate Sign Up

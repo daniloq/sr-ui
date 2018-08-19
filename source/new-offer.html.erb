@@ -27,27 +27,35 @@ title: Silkroad - New Offer
           <label for="file">Upload Files</label>
         </div>
         <form class="s-form">
-          <!-- Label and input with placeholder text -->
           <div class="s-form__field">
             <label class="s-label">Who needs to sign</label>
-            <input class="s-input" placeholder="Approval Role (Manager, Employee, etc.)" />
+            <div class="s-input__with-pills">
+              <div class="s-input__with-pills-container">
+                <div class="s-pill">
+                  <span>Manager</span>
+                  <i class="material-icons">
+                    clear
+                  </i>
+                </div>
+                <div class="s-pill">
+                  <span>Candidate</span>
+                  <i class="material-icons">
+                    clear
+                  </i>
+                </div>
+              </div>
+              <input class="s-input" placeholder="Approval Role (Manager, Employee, etc.)" />
+            </div>
             <div class="s-error-message">
               Oops something went from.
             </div>
           </div>
-          <!-- Label and input with value -->
-          <div class="s-form__field">
-            <input class="s-input" value="Candidate" />
-            <div class="s-error-message">
-              Oops something went from.
-            </div>
-          </div>
-          <button class="s-button--text">
+          <!-- <button class="s-button--text">
             <i class="material-icons">
               add_circle_outline
             </i>
             <span>Add a role</span>
-          </button>
+          </button> -->
         </form>
         <!-- Divider -->
         <hr />
