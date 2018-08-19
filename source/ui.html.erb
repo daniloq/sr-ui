@@ -1,0 +1,466 @@
+---
+title: Silkroad - UI
+---
+
+<div class="s-wrapper" style="padding: 20px">
+  <h2>Top Nav</h2>
+  <div class="s-nav">
+    <div class="s-wrapper">
+      <div class="s-nav__logo">
+        <a href="/" alt="Silkroad"><img src="images/silkroad-logo.png" alt="Silkroad Logo" /></a>
+      </div>
+      <div class="s-nav__search">
+        <div class="s-nav__search-icon">
+          <i class="material-icons">
+            search
+          </i>
+        </div>
+        <input type="text" placeholder="Search by project or person" />
+      </div>
+      <div class="s-nav__menu-container">
+        <div class="s-nav__avatar">
+          <a href="#">
+            <div class="s-nav__avatar-placeholder">
+              aa
+            </div>
+          </a>
+        </div>
+        <div class="s-menu">
+          <a href="#" class="s-menu__item">Option 1</a>
+          <a href="#" class="s-menu__item s-menu__item--selected">Option 2</a>
+          <a href="#" class="s-menu__item">Option 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Breadcrumb Nav</h2>
+  <div class="s-nav">
+    <div class="s-wrapper">
+      <div class="s-nav__breadcrumb">
+        <button class="s-button--text">
+          <i class="material-icons">
+            arrow_back
+          </i>
+        </button>
+        <p>New Offer Letter</p>
+      </div>
+    </div>
+  </div>
+  <h2>Nav Preivew</h2>
+  <div class="s-nav s-nav--preview">
+    <div class="s-wrapper">
+      <div class="s-nav__breadcrumb">
+        <button class="s-button--text">
+          <i class="material-icons">
+            close
+          </i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <h2>Candidate Nav</h2>
+  <div class="s-nav s-nav--candidate">
+    <div class="s-wrapper">
+      <div class="s-nav__logo">
+        <img src="images/paypal-logo.png" alt="Paypal Logo" />
+      </div>
+    </div>
+  </div>
+  <h2>Buttons</h2>
+  <button class="s-button">Default</button>
+  <br />
+  <button class="s-button--text">Text Button</button>
+  <br />
+  <button class="s-button s-button--secondary">Secondary</button>
+  <br />
+  <button class="s-button s-button--green-blue">Green Blue</button>
+  <br />
+  <button class="s-button s-button--large">Large</button>
+  <br />
+  <button class="s-button--text">
+    <i class="material-icons">
+      add_circle_outline
+    </i>
+    <span>Button with Icon</span>
+  </button>
+  <h2>Form Inputs</h2>
+  <form class="s-form">
+    <div class="s-form__field">
+      <label class="s-label">Label</label>
+      <input class="s-input" placeholder="Placeholder text" />
+      <div class="s-error-message">
+        Oops something went from.
+      </div>
+      <div class="s-menu">
+        <h5>Menu Header</h5>
+        <a href="#" class="s-menu__item">Option 1</a>
+        <a href="#" class="s-menu__item s-menu__item--selected">Option 3</a>
+        <a href="#" class="s-menu__item">Option 3</a>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="s-form__field s-form__field--error">
+      <label class="s-label">Label</label>
+      <input class="s-input" placeholder="Placeholder text" />
+      <div class="s-error-message">
+        Oops something went from.
+      </div>
+    </div>
+    <div class="s-form__field">
+      <label class="s-label">Label</label>
+      <div class="s-input__with-pills">
+        <div class="s-input__with-pills-container">
+          <div class="s-pill">
+            <span>Pill</span>
+            <i class="material-icons">
+              clear
+            </i>
+          </div>
+          <div class="s-pill">
+            <span>Pill</span>
+            <i class="material-icons">
+              clear
+            </i>
+          </div>
+        </div>
+        <input class="s-input" placeholder="Placeholder text" />
+      </div>
+      <div class="s-error-message">
+        Oops something went from.
+      </div>
+    </div>
+    <!-- Date Picker -->
+    <div class="s-form__field">
+      <label class="s-label">Start Date</label>
+      <input class="s-input" data-toggle="datepicker" placeholder="Add start date" />
+      <div class="s-error-message">
+        Oops something went from.
+      </div>
+    </div>
+  </form>
+  <h2>Upload Doc States</h2>
+  <div class="s-upload">
+    <input type="file" name="file" id="file" class="s-upload__button" />
+    <label for="file">Upload Files</label>
+  </div>
+  <div class="s-upload">
+    <div class="s-progress">
+      <div class="s-progress__background">
+        <div class="s-progress__bar" style="width: 30%"></div>
+      </div>
+      <div class="s-progress__text">
+        Uploading <span>doc.docx</span>
+      </div>
+    </div>
+  </div>
+  <div class="s-upload">
+    <input type="file" name="file" id="file" class="s-upload__button" />
+    <label for="file">Upload Files</label>
+  </div>
+  <div class="s-upload__doc">
+    <i class="material-icons">
+      insert_drive_file
+    </i>
+    <span>doc.docx</span>
+    <button class="s-button--text">
+      <i class="material-icons">
+        cancel
+      </i>
+    </button>
+  </div>
+  <h2>Iframe</h2>
+  <div class="s-iframe-container">
+    <iframe src="http://www.espn.com/">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+  <h2>Offer Section</h2>
+  <div class="s-offer">
+    <div class="s-wrapper">
+      <div class="s-header">
+        <h3>Offers</h3>
+        <button class="s-button s-button--text">
+          <i class="material-icons">
+            cloud_upload
+          </i>
+        </button>
+      </div>
+      <div class="s-offer__container">
+        <a class="s-offer__template s-offer__template--new" href="">
+          <div class="s-offer__template-content">
+            <i class="material-icons">
+              note_add
+            </i>
+          </div>
+          <div class="s-offer__template-footer">
+            <h5>
+              New Offer Letter
+            </h5>
+          </div>
+        </a>
+        <a class="s-offer__template" href="">
+          <div class="s-offer__template-content">
+            <i class="material-icons">
+              insert_drive_file
+            </i>
+          </div>
+          <div class="s-offer__template-footer">
+            <h5>
+              Sales Offer Letter 1
+            </h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <h2>Offer Table</h2>
+  <div class="s-manage-offers">
+    <div class="s-wrapper">
+      <h1>
+        Manage Your Offers
+      </h1>
+      <div class="s-manage-offers__table">
+        <table>
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Job Title</th>
+              <th>Candidate</th>
+              <th>Owner</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>
+              <div class="s-status">
+                <span class="s-dot s-dot--red"></span>
+                <div>New Request</div>
+              </div>
+            </td>
+            <td>Some Job Title</td>
+            <td>Taylor Philips</td>
+            <td>Me</td>
+            <td>Jun 9</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="s-status">
+                <span class="s-dot s-dot--green"></span>
+                <div>Approved</div>
+              </div>
+            </td>
+            <td>Some Job Title</td>
+            <td>Taylor Philips</td>
+            <td>Me</td>
+            <td>Jun 9</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="s-status">
+                <span class="s-dot s-dot--dark-blue"></span>
+                <div>Pending Acceptance</div>
+              </div>
+            </td>
+            <td>Some Job Title</td>
+            <td>Taylor Philips</td>
+            <td>Me</td>
+            <td>Jun 9</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="s-status">
+                <span class="s-dot s-dot--yellow"></span>
+                <div>Rejected</div>
+              </div>
+            </td>
+            <td>Some Job Title</td>
+            <td>Taylor Philips</td>
+            <td>Me</td>
+            <td>Jun 9</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="s-status">
+                <span class="s-dot s-dot--blue"></span>
+                <div>Accepted</div>
+              </div>
+            </td>
+            <td>Some Job Title</td>
+            <td>Taylor Philips</td>
+            <td>Me</td>
+            <td>Jun 9</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="s-status">
+                <span class="s-dot s-dot--gray"></span>
+                <div>Declined</div>
+              </div>
+            </td>
+            <td>Some Job Title</td>
+            <td>Taylor Philips</td>
+            <td>Me</td>
+            <td>Jun 9</td>
+          </tr>
+          <tr class="s-manage-offers__details">
+            <td colspan="5">
+              <div class="s-manage-offers__details-content">
+                <div>
+                  <dl>
+                    <dt>
+                      Requester
+                    </dt>
+                    <dd>
+                      John Doe
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      Requester
+                    </dt>
+                    <dd>
+                      Jane Doe
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      Acceptance
+                    </dt>
+                    <dd>
+                      Declined
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      Acceptance
+                    </dt>
+                    <dd>
+                      Delined
+                    </dd>
+                  </dl>
+                </div>
+                <div>
+                  <button class="s-button">Edit</button>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <h2>Sidebar</h2>
+  <div class="s-sidebar">
+    <div class="s-sidebar__content">
+      <div class="s-sidebar__header">
+        <p>
+          New Request
+        </p>
+        <i class="material-icons">
+          info
+        </i>
+      </div>
+      <div class="s-help-text">Please review and sign the attached document to accept your offer. To request changes, please complete the form below:</div>
+      <form class="s-form">
+        <div class="s-form__field">
+          <label class="s-label">Add Organization</label>
+          <input class="s-input" placeholder="Add organization" value="Org Name" />
+          <div class="s-error-message">
+            Oops something went from.
+          </div>
+        </div>
+        <div class="s-form__field">
+          <label class="s-label">Add Approvers</label>
+          <p>
+            Michael Baxter
+          </p>
+          <p>
+            Paul Allen
+          </p>
+        </div>
+        <div class="s-form__field">
+          <label class="s-label">Candidate</label>
+          <p>
+            John Doe
+          </p>
+        </div>
+        <br />
+        <button class="s-button s-button--large">Edit Offer Letter</button>
+      </form>
+      <div class="s-timeline">
+        <div class="s-timeline__header">
+          <p>
+            Timeline
+          </p>
+        </div>
+        <div class="s-timeline__item s-timeline__item--active">
+          <div class="s-timeline__icon s-timeline__icon--green">
+            <i class="material-icons">
+              insert_drive_file
+            </i>
+          </div>
+          <div class="s-timeline__meta">
+            <h5>Candidate Name</h5>
+            <small>8:38AM - Mar 3, 2018</small>
+          </div>
+        </div>
+        <div class="s-timeline__item">
+          <div class="s-timeline__icon s-timeline__icon--blue">
+            <i class="material-icons">
+              send
+            </i>
+          </div>
+          <div class="s-timeline__meta">
+            <h5>Recruiter Name</h5>
+            <small>11:23AM - Mar 3, 2018</small>
+          </div>
+        </div>
+        <div class="s-timeline__item">
+          <div class="s-timeline__icon s-timeline__icon--green">
+            <i class="material-icons">
+              check
+            </i>
+          </div>
+          <div class="s-timeline__meta">
+            <h5>Approver Name</h5>
+            <small>11:23AM - Mar 3, 2018</small>
+          </div>
+        </div>
+        <div class="s-timeline__item">
+          <div class="s-timeline__icon s-timeline__icon--dark-blue">
+            <i class="material-icons">
+              insert_drive_file
+            </i>
+          </div>
+          <div class="s-timeline__meta">
+            <h5>Recruiter Name</h5>
+            <small>8:23AM - Mar 3, 2018</small>
+          </div>
+        </div>
+        <div class="s-timeline__item">
+          <div class="s-timeline__icon s-timeline__icon--red">
+            <i class="material-icons">
+              cancel
+            </i>
+          </div>
+          <div class="s-timeline__meta">
+            <h5>Approver Name</h5>
+            <small>12:14PM - Mar 2, 2018</small>
+            <p>
+              Paragrapgh of text comment submitted when an approver declines the offer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('[data-toggle="datepicker"]').datepicker();
+</script>
