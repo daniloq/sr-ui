@@ -43,6 +43,7 @@ a
 
 p
   font-size: 1.4rem
+  line-height: 2rem
 
 h1
   font-size: 2.4rem
@@ -900,12 +901,37 @@ hr
     padding: 2rem 0
     font-size: 1.6rem
 
+// Work Life
+.s-work-life
+
+  &__video
+    display: flex
+    justify-content: center
+
+  &__content
+    max-width: 60rem
+    margin: 5rem auto 0 auto
+
+    h2
+      color: darken($gray, 10%)
+      text-transform: uppercase
+
+  .s-card
+    width: calc((100% / 3 ) - 20px)
+
+  .s-wrapper
+    max-width: 74rem
+
 // Media Queries
 @media screen and (max-width: 600px)
 
   .s-hero
     h1
       font-size: 2.4rem
+
+  .s-work-life
+    .s-card
+      width: calc((100% / 2) - 10px)
 
   .s-card
     width: calc((100% / 2) - 10px)
