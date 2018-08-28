@@ -779,8 +779,72 @@ hr
     .s-button
       width: 100%
 
+// Tab
+.s-tab
+  display: flex
+  justify-content: center
+  align-items: center
+  background: $white
+  padding-top: 1rem
+
+  &__item
+    border-bottom: .6rem solid transparent
+    padding: 1rem 2rem
+    margin: 0 .5rem
+    color: $dark-gray
+    font-size: 1.4rem
+    text-transform: uppercase
+
+    &:hover
+      color: $green-blue
+
+    &--active
+      border-bottom: .6rem solid $green-blue
+
+      &:hover
+        color: $dark-gray
+        cursor: default
+
+// Avatar
+.s-avatar
+  width: 8rem
+  height: 8rem
+
+  img
+    width: auto
+    height: 100%
+
+// Signature Image
+.s-signature-image
+  height: 5rem
+  width: auto
+
+  img
+    height: 100%
+    width: auto
+
+// Welcome
+.s-welcome
+  padding: 4rem 0
+
+  &__content
+    max-width: 60rem
+    display: flex
+    margin: 0 auto
+
+  h1
+    font-size: 3.4rem
+    margin-bottom: 5rem
+
+  .s-avatar
+    margin-right: 6rem
+
 // Media Queries
 @media screen and (max-width: 600px)
+
+  .s-welcome__content
+    display: flex
+    flex-direction: column
 
   .s-candidate-signup
     padding: 2rem
