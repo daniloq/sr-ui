@@ -839,8 +839,82 @@ hr
   .s-avatar
     margin-right: 6rem
 
+// Hero
+.s-hero
+  height: 38.5rem
+  color: $white
+  display: flex
+  align-items: center
+  text-align: center
+  margin-top: 6rem
+  border-radius: 0 14.1rem 0 0
+
+  &__content
+    padding: 0 2rem
+    max-width: 80rem
+    margin: 0 auto
+
+  h1
+    font-size: 4.8rem
+
+  p
+    line-height: 1.9rem
+
+  &--candidate-offer
+    background: url('/images/candidate-offer-bg.png') center no-repeat
+    background-size: cover
+
+// Card
+.s-card
+  width: calc((100% / 4) - 20px)
+  box-shadow: 0 .2rem .2rem 0 rgba(0,0,0,0.1)
+  margin-top: 2rem
+  transition: all .3s
+
+  &:hover
+    cursor: pointer
+    box-shadow: 0 .3rem .2rem 0 rgba(0,0,0,0.2)
+
+    .s-card__footer
+      color: $green-blue
+
+  &:not(:last-of-type)
+    margin-right: 2rem
+
+  &__container
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__image
+    height: 19.2rem
+    width: 100%
+    overflow: hidden
+
+    img
+      width: auto
+      height: 100%
+
+  &__footer
+    text-align: center
+    padding: 2rem 0
+    font-size: 1.6rem
+
 // Media Queries
 @media screen and (max-width: 600px)
+
+  .s-hero
+    h1
+      font-size: 2.4rem
+
+  .s-card
+    width: calc((100% / 2) - 10px)
+
+    &:not(:last-of-type)
+      margin-right: 0
+
+    &__image
+      height: 15rem
 
   .s-welcome__content
     display: flex
