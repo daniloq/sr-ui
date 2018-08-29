@@ -117,6 +117,13 @@ hr
   &--large
     height: 4.8rem
 
+  &--icon
+    display: inline-flex
+    align-items: center
+    i
+      font-size: 1.6rem
+      margin-right: 1rem
+
 // Helpers
 .s-align-center
   text-align: center
@@ -418,6 +425,10 @@ hr
       i, h5
         color: $blue
 
+  &--candidate
+    background: none
+    padding: 2rem 0
+
 // Status
 .s-status
   display: flex
@@ -502,6 +513,11 @@ hr
 .s-manage-offers
   padding: 4rem 0
 
+  &__header
+    display: flex
+    align-items: center
+    justify-content: space-between
+
   &__table
 
     table
@@ -549,6 +565,7 @@ hr
         margin: 1rem 0 0 0
         padding: 0
         color: $dark-gray
+
 
 // New Offer
 .s-new-offer
