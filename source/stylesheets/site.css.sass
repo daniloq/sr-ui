@@ -949,6 +949,10 @@ hr
   .s-work-life
     .s-card
       width: calc((100% / 2) - 10px)
+    &__video
+      iframe
+        height: 20rem
+        width: 100%
 
   .s-card
     width: calc((100% / 2) - 10px)
@@ -959,9 +963,20 @@ hr
     &__image
       height: 15rem
 
+  .s-welcome
+    h1
+      font-size: 3rem
+      margin-bottom: 2rem
+
   .s-welcome__content
     display: flex
     flex-direction: column
+
+    .s-avatar
+      display: none
+
+    .s-button--green-blue
+      width: 100%
 
   .s-candidate-signup
     padding: 2rem
