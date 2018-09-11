@@ -1,0 +1,82 @@
+---
+title: Silkroad - New template
+---
+
+<div class="s-nav">
+  <div class="s-wrapper">
+    <div class="s-nav__breadcrumb">
+      <button class="s-button--text">
+        <i class="material-icons">
+          arrow_back
+        </i>
+      </button>
+      <p>New Template</p>
+    </div>
+  </div>
+</div>
+
+<div class="s-new-offer">
+  <div class="s-wrapper">
+    <div class="s-new-offer__content">
+        <h1>Upload your document</h1>
+        <p>
+          Only Word (.doc and .docx), PDF, and .txt file types are supported.
+        </p>
+        <div class="s-upload">
+          <input type="file" name="file" id="file" class="s-upload__button" />
+          <label for="file">Upload Files</label>
+        </div>
+        <form class="s-form">
+          <div class="s-form__field">
+            <label class="s-label">Who needs to sign</label>
+            <div class="s-input__with-pills">
+              <div class="s-input__with-pills-container">
+                <div class="s-pill">
+                  <span>Manager</span>
+                  <i class="material-icons">
+                    clear
+                  </i>
+                </div>
+                <div class="s-pill">
+                  <span>Candidate</span>
+                  <i class="material-icons">
+                    clear
+                  </i>
+                </div>
+              </div>
+              <input class="s-input" placeholder="Approval Role (Manager, Employee, etc.)" />
+            </div>
+            <div class="s-error-message">
+              Oops something went from.
+            </div>
+          </div>
+          <!-- <button class="s-button--text">
+            <i class="material-icons">
+              add_circle_outline
+            </i>
+            <span>Add a role</span>
+          </button> -->
+        </form>
+        <!-- Divider -->
+        <hr />
+        <button class="s-button s-button--secondary s-button--large">Add Fields and Signature</button>
+        <!-- Divider -->
+        <hr />
+        <form class="s-form">
+          <!-- Label and input with error state -->
+          <div class="s-form__field s-form__field--error">
+            <label class="s-label">Add a template name</label>
+            <input class="s-input" placeholder="Template Name" />
+            <div class="s-error-message">
+              Oops something went from.
+            </div>
+          </div>
+        </form>
+        <br />
+        <br />
+        <button class="s-button s-button--large">Save</button>
+      </div>
+      <div class="s-sidebar">
+      </div>
+    </div>
+</div>
