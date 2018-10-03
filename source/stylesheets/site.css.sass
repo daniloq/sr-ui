@@ -143,6 +143,9 @@ hr
   i
     margin-left: 1rem
 
+.s-gray
+  color: darken($gray, 10%)
+
 .s-flex
   display: flex
   align-items: center
@@ -985,6 +988,14 @@ hr
     height: .1rem
     margin: 2rem 0
 
+  textarea.s-input
+    border: $gray .1rem solid
+    border-radius: .8rem
+    padding: 1rem 2rem
+
+  .s-column
+    margin: 0
+
   .s-column:not(:last-of-type)
     margin-right: 10rem
 
@@ -1021,11 +1032,6 @@ hr
       tr:hover
         background: $white
         cursor: default
-
-    textarea.s-input
-      border: $gray .1rem solid
-      border-radius: .8rem
-      padding: 1rem 2rem
 
 .s-welcome-message-preview
   background: $light-gray

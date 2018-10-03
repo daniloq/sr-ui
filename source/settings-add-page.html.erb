@@ -1,0 +1,87 @@
+---
+title: Silkroad - Settings Add Page
+---
+
+<div class="s-nav">
+  <div class="s-wrapper">
+    <div class="s-nav__breadcrumb">
+      <button class="s-button--text">
+        <i class="material-icons">
+          arrow_back
+        </i>
+      </button>
+      <p>Settings</p>
+    </div>
+  </div>
+</div>
+
+<div class="s-new-offer">
+  <div class="s-wrapper">
+    <div class="s-new-offer__content">
+      <div class="s-status">
+        <h1><input type="text" value="Give your page a name" /></h1>
+      </div>
+      <form class="s-form">
+        <div class="s-settings">
+          <div class="s-two-column">
+            <div class="s-column">
+              <h3>Add a Page Video</h3>
+              <input class="s-input" placeholder="Paste your YouTube URL" />
+              <br/>
+            </div>
+          </div>
+          <div class="s-two-column">
+            <div class="s-column">
+              <h3>Upload a Banner Image</h3>
+              <p class="s-gray">
+                Your page banner image will be displayed in the candidate portal on this page. The file should be in SVG, PNG or JPG format, up to 800 x 800 pixels.
+              </p>
+              <div class="s-two-column s-two-column--vertical-center">
+                <div class="s-column">
+                  <input type="file"  />
+                </div>
+                <div class="s-column">
+                  <div class="s-right">
+                    <button class="s-button s-button--large s-button--secondary">Upload</button>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+          <div class="s-two-column">
+            <div class="s-column">
+              <h3>A Page Content</h3>
+              <p class="s-gray">
+                Your content will be displayed on the page as text below the video
+or banner image.
+              </p>
+              <textarea class="s-input" placeholder="Compose a message"></textarea>
+              <br/>
+              <div class="s-right">
+  <button class="s-button s-button--large s-button--secondary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="s-sidebar">
+      <div class="s-sidebar__content">
+        <div class="s-sidebar__header">
+          <p>
+            Page Preview
+          </p>
+          <i class="material-icons">
+            launch
+          </i>
+        </div>
+        <button class="s-button s-button--large">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('[data-toggle="datepicker"]').datepicker();
+</script>
