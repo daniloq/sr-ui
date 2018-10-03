@@ -228,6 +228,9 @@ hr
   .s-column
     width: 50%
 
+  &--vertical-center
+    align-items: center
+
 // Upload
 .s-upload
   background: $medium-gray
@@ -968,6 +971,7 @@ hr
     border-bottom: .2rem solid $gray
     padding: 2rem 0
     display: inline-block
+    margin-bottom: 3rem
 
   h3
     text-transform: uppercase
@@ -976,14 +980,20 @@ hr
   h3.s-dark-gray
     color: $dark-gray
 
+  hr
+    background: $gray
+    height: .1rem
+    margin: 2rem 0
+
   .s-column:not(:last-of-type)
-    margin-right: 2rem
+    margin-right: 10rem
 
   &__content
     background: $white
     margin-bottom: 6rem
     padding: 2rem 0 4rem 0
     color: darken($gray, 10%)
+    box-shadow: 0rem .2rem .5rem 0rem rgba(0,0,0,0.09)
 
   &__header
     border-bottom: 0.1rem solid $medium-gray
@@ -991,7 +1001,6 @@ hr
 
     .s-two-column
       align-items: center
-
 
     h3
       color: $dark-gray
