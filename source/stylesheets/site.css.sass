@@ -134,6 +134,21 @@ hr
 .s-align-center
   text-align: center
 
+.s-right
+  float: right
+
+.s-link-with-icon
+  display: flex
+  align-items: center
+  i
+    margin-left: 1rem
+
+.s-flex
+  display: flex
+  align-items: center
+  i
+    margin-right: 1rem
+
 // Forms
 .s-form
 
@@ -954,16 +969,74 @@ hr
     padding: 2rem 0
     display: inline-block
 
+  h3
+    text-transform: uppercase
+    color: darken($gray, 10%)
+
+  h3.s-dark-gray
+    color: $dark-gray
+
+  .s-column:not(:last-of-type)
+    margin-right: 2rem
+
   &__content
     background: $white
+    margin-bottom: 6rem
+    padding: 2rem 0 4rem 0
+    color: darken($gray, 10%)
 
   &__header
     border-bottom: 0.1rem solid $medium-gray
-    padding: 0 4rem
+    padding: 0 4rem 2rem 4rem
+
+    .s-two-column
+      align-items: center
+
+
+    h3
+      color: $dark-gray
 
   &__section
     padding: 0 4rem
 
+    .s-hero
+      height: 15rem
+
+    .s-help-text
+      font-size: 1.2rem
+
+      p
+        font-size: 1.2rem
+
+    .s-manage-offers__table
+      tr:hover
+        background: $white
+        cursor: default
+
+    textarea.s-input
+      border: $gray .1rem solid
+      border-radius: .8rem
+      padding: 1rem 2rem
+
+.s-welcome-message-preview
+  background: $light-gray
+  color: $dark-gray
+  padding: 2rem
+
+  p
+    font-size: .9rem
+
+.s-color-input
+  display: flex
+  align-items: center
+
+  .s-input
+    width: auto
+
+  &__preview
+    width: 4rem
+    height: 3.2rem
+    background: #333333
 
 // Media Queries
 @media screen and (max-width: 600px)

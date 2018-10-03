@@ -30,6 +30,7 @@ title: Silkroad - Settings
 <div class="s-settings">
   <div class="s-wrapper">
     <h1>Settings</h1>
+    <!-- Company Profile -->
     <div class="s-settings__content">
       <div class="s-settings__header">
         <div class="s-two-column">
@@ -40,8 +41,10 @@ title: Silkroad - Settings
             </p>
           </div>
           <div class="s-column">
-            <a href="">
-              View Your Portal
+            <a  class="s-link-with-icon" href="">
+              <div>
+                View Your Portal
+              </div>
               <i class="material-icons">
                 launch
               </i>
@@ -62,7 +65,9 @@ title: Silkroad - Settings
                 <input type="file"  />
               </div>
               <div class="s-column">
-                <button class="s-button s-button--large s-button--secondary">Upload</button>
+                <div class="s-right">
+                  <button class="s-button s-button--large s-button--secondary">Upload</button>
+                </div>
               </div>
             </div>
             <hr />
@@ -82,7 +87,6 @@ title: Silkroad - Settings
         <div class="s-color-input">
           <input class="s-input" type="text" value="#333333"/>
           <div class="s-color-input__preview">
-
           </div>
         </div>
       </div>
@@ -99,7 +103,9 @@ title: Silkroad - Settings
                 <input type="file"  />
               </div>
               <div class="s-column">
-                <button class="s-button s-button--large s-button--secondary">Upload</button>
+                <div class="s-right">
+                  <button class="s-button s-button--large s-button--secondary">Upload</button>
+                </div>
               </div>
             </div>
             <hr />
@@ -116,19 +122,123 @@ title: Silkroad - Settings
               Your portal image will be displayed in the candidate portal. The image should not have any text. The file should be in SVG, PNG or JPG format, up to 2000 x 2000 pixels.
             </p>
             <textarea class="s-input" placeholder="Compose a message"></textarea>
-            <button class="s-button s-button--large s-button--secondary">Publish</button>
+            <br/>
+            <div class="s-right">
+<button class="s-button s-button--large s-button--secondary">Publish</button>
+            </div>
           </div>
           <div class="s-column">
-            <div>
-              <i class="material-icons">
-                error
-              </i>
-              <strong>Portal Hero Tip</strong>
+            <div class="s-help-text">
+              <div class="s-flex">
+                <i class="material-icons">
+                  error
+                </i>
+                <strong>Portal Hero Tip</strong>
+              </div>
+              <p>
+                Portal Hero is a short mission statement for to briefly describe your employer brand. Keep it short and sweet. The text will overlay the Portal Hero Image like this.
+              </p>
             </div>
+            <div class="s-hero s-hero--candidate-offer">
+              <div class="s-hero__content">
+                <h5>Join the Digital Payments Revolution</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome Message -->
+    <div class="s-settings__content">
+      <div class="s-settings__section">
+        <div class="s-two-column">
+          <div class="s-column">
+            <h3 class="s-dark-gray">Welcome Message</h3>
             <p>
-              Portal Hero is a short mission statement for to briefly describe your employer brand. Keep it short and sweet. The text will overlay the Portal Hero Image like this.
+              Add a welcome message to be displayed to all candidates prior to reviewing a document for signature.
+            </p>
+            <h3 >Add Your Message</h3>
+            <p>
+              Your message will be displayed in the candidate portal, is text only and should be no longer than X characters.
+            </p>
+            <textarea class="s-input" placeholder="Compose a message"></textarea>
+            <br/>
+            <div class="s-right">
+<button class="s-button s-button--large s-button--secondary">Publish</button>
+            </div>
+          </div>
+          <div class="s-column">
+            <div class="s-help-text">
+              <div class="s-flex">
+                <i class="material-icons">
+                  error
+                </i>
+                <strong>Welcome Message Tip</strong>
+              </div>
+              <p>
+                Welcome messages are the first thing a new candidate will see. A best practice example is a message from leadership introducing company values and mission.
+              </p>
+            </div>
+            <div class="s-welcome-message-preview">
+              <p>
+                Hi Taylor,
+              <p/>
+              <p>
+                We believe that now is the time to democratize financial services so that moving and managing money is a right for all citizens. We are driven by this purpose, and we uphold our cultural values of collaboration, innovation, wellness and inclusion as our guide for making decisions and conducting business every day. Are you ready to build a world of economic opportunity?
+              </p>
+              <p>
+                Join us.
+              </p>
+              <p>
+                John Doe
+                <br />
+                CEO
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pages -->
+    <div class="s-settings__content">
+      <div class="s-settings__header">
+        <div class="s-two-column">
+          <div class="s-column">
+            <h3>Pages</h3>
+            <p>
+              Pages allow you to share the most important company values, features, benefits, work-life experiences with potential new hires.
+            </p>
+            <p>
+              Pages are displayed on your candidate portal to allow you to add key employer branding components and additional documents to the offer process.
             </p>
           </div>
+          <div class="s-column">
+            <button class="s-button s-button--large s-button--secondary">Add New Page</button>
+          </div>
+        </div>
+      </div>
+      <div class="s-settings__section">
+        <div class="s-manage-offers__table">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Some page name</td>
+              <td>June 9</td>
+              <td><a href="">Edit</a></td>
+            </tr>
+            <tr>
+              <td>Some page name</td>
+              <td>June 9</td>
+              <td><a href="">Edit</a></td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
